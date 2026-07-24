@@ -4,7 +4,7 @@ import {
   Target,
   Search,
   MessageSquare,
-  TrendingUp,
+  Users,
 } from "lucide-react";
 
 const reasons = [
@@ -12,25 +12,25 @@ const reasons = [
     icon: Target,
     title: "Built Around MSP Growth",
     description:
-      "CloviraHQ is designed specifically for Managed Service Providers, their buyers, and the challenges of building predictable growth.",
+      "CloviraHQ is designed specifically for Managed Service Providers, their buyers, and the challenges of creating predictable sales opportunities.",
   },
   {
     icon: Search,
     title: "Research Before Outreach",
     description:
-      "We identify the right companies, decision-makers, and business signals before starting any outreach.",
+      "We identify ideal prospects, decision-makers, and business signals before outreach begins, creating more relevant conversations.",
   },
   {
     icon: MessageSquare,
     title: "Conversations Over Volume",
     description:
-      "We focus on reaching the right buyers with relevant messaging instead of sending generic mass emails.",
+      "We focus on thoughtful targeting and personalized messaging instead of sending generic messages at scale.",
   },
   {
-    icon: TrendingUp,
-    title: "A System That Improves",
+    icon: Users,
+    title: "Focused Partnership",
     description:
-      "Campaign performance, targeting, and messaging are continuously refined to create a stronger outbound engine over time.",
+      "We work closely with a limited number of MSPs to continuously refine strategy, messaging, and outbound performance.",
   },
 ];
 
@@ -46,8 +46,6 @@ export default function WhyChooseUs() {
         sm:py-28
       "
     >
-
-      {/* Background Glow */}
 
       <div
         className="
@@ -72,8 +70,8 @@ export default function WhyChooseUs() {
 
         <SectionHeading
           eyebrow="Why Choose CloviraHQ"
-          title="A smarter outbound approach built for MSP growth."
-          description="Unlike traditional outreach providers focused on volume, CloviraHQ combines research, personalization, and strategy to create meaningful conversations with the right decision-makers."
+          title="A more thoughtful approach to outbound growth."
+          description="CloviraHQ combines MSP-focused research, personalized outreach, and close collaboration to build outbound systems that improve over time."
           center
         />
 

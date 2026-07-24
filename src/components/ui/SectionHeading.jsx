@@ -8,14 +8,9 @@ export default function SectionHeading({
     <div
       className={`
         max-w-3xl
-        ${
-          center
-            ? "mx-auto text-center"
-            : ""
-        }
+        ${center ? "mx-auto text-center" : ""}
       `}
     >
-
       {eyebrow && (
         <p
           className="
@@ -23,13 +18,12 @@ export default function SectionHeading({
             font-semibold
             uppercase
             tracking-wider
-            text-blue-600
+            text-blue-400
           "
         >
           {eyebrow}
         </p>
       )}
-
 
       <h2
         className="
@@ -37,13 +31,12 @@ export default function SectionHeading({
           text-3xl
           font-bold
           tracking-tight
-          text-gray-900
+          text-white
           md:text-4xl
         "
       >
         {title}
       </h2>
-
 
       {description && (
         <p
@@ -51,13 +44,12 @@ export default function SectionHeading({
             mt-5
             text-lg
             leading-relaxed
-            text-gray-600
+            text-slate-300
           "
         >
           {description}
         </p>
       )}
-
     </div>
   );
 }

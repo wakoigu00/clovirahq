@@ -9,31 +9,31 @@ const steps = [
     number: "01",
     title: "Discovery & Strategy",
     description:
-      "We learn about your MSP, goals, services, and ideal customers to build the right outbound strategy.",
+      "We understand your MSP, services, goals, and ideal customers to create an outbound strategy aligned with your growth objectives.",
   },
   {
     number: "02",
     title: "Research & Targeting",
     description:
-      "We identify high-fit companies, decision-makers, and buying signals that indicate genuine growth opportunities.",
+      "We identify high-fit companies, decision-makers, and business signals that indicate strong opportunities for meaningful conversations.",
   },
   {
     number: "03",
     title: "Personalized Outreach",
     description:
-      "Every campaign is tailored with relevant messaging designed to start meaningful business conversations.",
+      "We build relevant messaging based on prospect research to create genuine conversations with MSP buyers.",
   },
   {
     number: "04",
-    title: "Optimize & Improve",
+    title: "Launch & Optimize",
     description:
-      "Campaigns are continuously refined using response data to improve engagement and conversion rates.",
+      "We monitor performance, analyze feedback, and continuously refine targeting, messaging, and outreach systems.",
   },
   {
     number: "05",
-    title: "Qualified Meetings",
+    title: "Qualified Conversations",
     description:
-      "Your calendar fills with conversations from decision-makers who match your ideal customer profile.",
+      "Your team receives conversations with prospects who match your ideal customer profile and business goals.",
   },
 ];
 
@@ -74,8 +74,8 @@ export default function Process() {
 
         <SectionHeading
           eyebrow="How It Works"
-          title="From strategy to qualified sales conversations"
-          description="Our outbound process combines research, personalization, and optimization to help MSPs build a predictable pipeline."
+          title="A structured outbound system built for MSP growth"
+          description="CloviraHQ combines strategy, research, personalization, and optimization to help MSPs create predictable sales conversations beyond referrals."
           center
         />
 
@@ -220,8 +220,8 @@ export default function Process() {
               text-slate-300
             "
           >
-            Book a discovery call and learn how CloviraHQ helps MSPs create
-            consistent sales conversations with the right decision-makers.
+            Explore how CloviraHQ can help your MSP create a repeatable
+            outbound system and start more meaningful sales conversations.
           </p>
 
 
@@ -245,7 +245,7 @@ export default function Process() {
               hover:shadow-blue-500/30
             "
           >
-            Book Discovery Call
+            Explore Partnership Fit
           </a>
 
 

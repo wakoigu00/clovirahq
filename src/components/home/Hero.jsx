@@ -19,7 +19,6 @@ export default function Hero() {
       "
     >
 
-      {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
 
         <div
@@ -42,11 +41,7 @@ export default function Hero() {
       </div>
 
 
-
       <Container>
-
-
-        {/* Hero Content */}
 
         <div
           className="
@@ -74,12 +69,9 @@ export default function Hero() {
               md:text-7xl
             "
           >
-
             Build a predictable outbound engine
             <br className="hidden sm:block" />
-
             that fills your MSP pipeline.
-
           </h1>
 
 
@@ -117,9 +109,7 @@ export default function Hero() {
             "
           >
 
-            <Button
-              href={bookingLink}
-            >
+            <Button href={bookingLink}>
               Book Discovery Call
             </Button>
 
@@ -131,12 +121,9 @@ export default function Hero() {
               See How It Works
             </Button>
 
-
           </div>
 
 
-
-          {/* Benefits */}
 
           <div
             className="
@@ -168,12 +155,27 @@ export default function Hero() {
           </div>
 
 
+
+          {/* Pilot Positioning */}
+
+          <p
+            className="
+              mx-auto
+              mt-8
+              max-w-2xl
+              text-sm
+              leading-6
+              text-slate-400
+            "
+          >
+            Currently partnering with a limited number of MSPs to build,
+            optimize, and refine outbound systems through close collaboration.
+          </p>
+
+
         </div>
 
 
-
-
-        {/* Outbound Engine */}
 
         <div
           className="
@@ -196,7 +198,6 @@ export default function Hero() {
               sm:p-8
             "
           >
-
 
             <div
               className="
@@ -245,7 +246,6 @@ export default function Hero() {
 
 
 
-
             <div
               className="
                 mt-6
@@ -254,7 +254,6 @@ export default function Hero() {
                 md:grid-cols-3
               "
             >
-
 
               <PipelineCard
                 number="01"
@@ -276,9 +275,7 @@ export default function Hero() {
                 text="4 conversations booked"
               />
 
-
             </div>
-
 
           </div>
 

@@ -18,8 +18,12 @@ export default function Navbar() {
       href: "#process",
     },
     {
-      name: "FAQ",
-      href: "#faq",
+      name: "Why Choose Us",
+      href: "#why-choose-us",
+    },
+    {
+      name: "Pilot Program",
+      href: "#pilot",
     },
   ];
 
@@ -43,6 +47,7 @@ export default function Navbar() {
         backdrop-blur-xl
       "
     >
+
       <nav
         className="
           mx-auto
@@ -57,6 +62,7 @@ export default function Navbar() {
       >
 
         {/* Logo */}
+
         <a
           href="#home"
           className="
@@ -71,17 +77,20 @@ export default function Navbar() {
         </a>
 
 
+
         {/* Desktop Navigation */}
+
         <div
           className="
             hidden
             items-center
-            gap-8
+            gap-7
             md:flex
           "
         >
 
           {links.map((link) => (
+
             <a
               key={link.name}
               href={link.href}
@@ -95,7 +104,9 @@ export default function Navbar() {
             >
               {link.name}
             </a>
+
           ))}
+
 
 
           <a
@@ -116,7 +127,7 @@ export default function Navbar() {
               hover:shadow-blue-500/30
             "
           >
-            Book Discovery Call
+            Explore Partnership Fit
           </a>
 
 
@@ -124,7 +135,9 @@ export default function Navbar() {
 
 
 
+
         {/* Mobile Menu Button */}
+
         <button
           onClick={() => setOpen(!open)}
           className="
@@ -134,12 +147,15 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           aria-expanded={open}
         >
+
           {open ? (
             <X className="h-7 w-7" />
           ) : (
             <Menu className="h-7 w-7" />
           )}
+
         </button>
+
 
       </nav>
 
@@ -148,6 +164,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
 
       {open && (
+
         <div
           className="
             border-t
@@ -169,6 +186,7 @@ export default function Navbar() {
           >
 
             {links.map((link) => (
+
               <a
                 key={link.name}
                 href={link.href}
@@ -183,7 +201,9 @@ export default function Navbar() {
               >
                 {link.name}
               </a>
+
             ))}
+
 
 
             <a
@@ -204,13 +224,14 @@ export default function Navbar() {
                 hover:bg-blue-700
               "
             >
-              Book Discovery Call
+              Explore Partnership Fit
             </a>
 
 
           </div>
 
         </div>
+
       )}
 
     </header>

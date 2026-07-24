@@ -16,7 +16,6 @@ export default function FinalCTA() {
       "
     >
 
-      {/* Background glow */}
       <div
         className="
           absolute
@@ -58,7 +57,6 @@ export default function FinalCTA() {
           "
         >
 
-          {/* Decorative glow */}
           <div
             className="
               pointer-events-none
@@ -88,8 +86,7 @@ export default function FinalCTA() {
                 md:text-5xl
               "
             >
-              Stop relying only on referrals. Build a predictable outbound
-              engine.
+              Build a predictable outbound system for your MSP growth.
             </h2>
 
 
@@ -107,9 +104,25 @@ export default function FinalCTA() {
                 sm:leading-8
               "
             >
-              CloviraHQ helps growing MSPs consistently reach the right
-              decision-makers and create qualified sales conversations through
-              personalized outbound systems.
+              CloviraHQ partners with MSPs to build research-driven outbound
+              systems that reach the right decision-makers, create meaningful
+              conversations, and develop repeatable growth channels.
+            </p>
+
+
+
+            <p
+              className="
+                mx-auto
+                mt-5
+                max-w-xl
+                text-sm
+                leading-6
+                text-blue-300
+              "
+            >
+              Currently accepting a limited number of MSP partners for our
+              collaborative pilot program.
             </p>
 
 
@@ -142,7 +155,7 @@ export default function FinalCTA() {
                   sm:text-base
                 "
               >
-                Book Discovery Call
+                Explore Partnership Fit
               </a>
 
             </div>
@@ -158,7 +171,8 @@ export default function FinalCTA() {
                 sm:text-sm
               "
             >
-              No pressure. Just a conversation about your MSP growth goals.
+              A focused conversation about your MSP goals, market, and growth
+              opportunities.
             </p>
 
 

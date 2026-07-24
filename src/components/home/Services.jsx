@@ -4,6 +4,7 @@ import Card from "../ui/Card";
 import {
   Search,
   MessageSquare,
+  Settings,
   TrendingUp,
 } from "lucide-react";
 
@@ -13,21 +14,28 @@ const services = [
     icon: Search,
     title: "Market Intelligence",
     description:
-      "Identify ideal MSP prospects, decision-makers, and growth signals so outreach focuses on companies with real opportunity.",
+      "Identify ideal MSP prospects, decision-makers, and business signals so outreach focuses on companies with the highest potential fit.",
   },
   {
     number: "02",
     icon: MessageSquare,
-    title: "Personalized Outreach",
+    title: "Personalized Outreach Systems",
     description:
-      "Create targeted campaigns with research-backed messaging designed to start relevant conversations with MSP buyers.",
+      "Create research-driven messaging that connects with MSP buyers through relevant, personalized conversations.",
   },
   {
     number: "03",
-    icon: TrendingUp,
-    title: "Pipeline Optimization",
+    icon: Settings,
+    title: "Outbound System Management",
     description:
-      "Analyze results, improve targeting, and continuously refine your outbound system to generate better opportunities.",
+      "Manage outreach workflows, monitor engagement, and maintain a consistent process designed to create qualified opportunities.",
+  },
+  {
+    number: "04",
+    icon: TrendingUp,
+    title: "Optimization & Insights",
+    description:
+      "Continuously improve targeting, messaging, and campaign performance using real market feedback and engagement data.",
   },
 ];
 
@@ -46,9 +54,10 @@ export default function Services() {
         <SectionHeading
           eyebrow="What We Do"
           title="A complete outbound system built for MSP growth."
-          description="CloviraHQ combines research, personalization, and optimization to help MSPs create a predictable pipeline beyond referrals."
+          description="CloviraHQ combines market intelligence, personalized outreach, and continuous optimization to help MSPs build predictable sales conversations beyond referrals."
           center
         />
+
 
         <div
           className="
@@ -56,9 +65,10 @@ export default function Services() {
             grid
             gap-6
             sm:mt-16
-            md:grid-cols-3
+            md:grid-cols-2
           "
         >
+
           {services.map((service) => {
             const Icon = service.icon;
 
@@ -101,6 +111,7 @@ export default function Services() {
                   />
                 </div>
 
+
                 <div
                   className="
                     mt-5
@@ -113,6 +124,7 @@ export default function Services() {
                   {service.number}
                 </div>
 
+
                 <h3
                   className="
                     mt-3
@@ -124,6 +136,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
+
                 <p
                   className="
                     mt-4
@@ -134,10 +147,13 @@ export default function Services() {
                   {service.description}
                 </p>
 
+
               </Card>
             );
           })}
+
         </div>
+
 
       </Container>
     </section>

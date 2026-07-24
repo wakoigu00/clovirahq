@@ -4,6 +4,7 @@ import Services from "../components/home/Services";
 import Process from "../components/home/Process";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import FAQ from "../components/home/FAQ";
+import WhyWereStartingSmall from "../components/home/WhyWereStartingSmall";
 import FinalCTA from "../components/home/FinalCTA";
 
 export default function Home() {
@@ -31,6 +32,10 @@ export default function Home() {
 
       <section id="faq">
         <FAQ />
+      </section>
+
+      <section id="pilot">
+        <WhyWereStartingSmall />
       </section>
 
       <section id="contact">

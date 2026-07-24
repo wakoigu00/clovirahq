@@ -47,8 +47,8 @@ export default function Footer() {
               "
             >
               Building predictable outbound systems that help Managed
-              Service Providers create qualified sales conversations and
-              consistent growth opportunities.
+              Service Providers create qualified sales conversations through
+              research-driven targeting and personalized outreach.
             </p>
 
           </div>
@@ -76,6 +76,7 @@ export default function Footer() {
                 ["Home", "#home"],
                 ["Services", "#services"],
                 ["How It Works", "#process"],
+                ["Pilot Program", "#pilot"],
                 ["FAQ", "#faq"],
                 ["Contact", "#contact"],
               ].map(([name, href]) => (
@@ -123,7 +124,7 @@ export default function Footer() {
 
               <li>Campaign Execution</li>
 
-              <li>Qualified Sales Conversations</li>
+              <li>Outbound Optimization</li>
 
             </ul>
 
@@ -148,7 +149,8 @@ export default function Footer() {
                 sm:text-base
               "
             >
-              Ready to build a predictable outbound pipeline for your MSP?
+              Currently partnering with a limited number of MSPs to build
+              and refine predictable outbound systems.
             </p>
 
 
@@ -171,7 +173,7 @@ export default function Footer() {
                 hover:shadow-blue-500/20
               "
             >
-              Book Discovery Call
+              Explore Partnership Fit
               <span className="ml-2">
                 →
               </span>
