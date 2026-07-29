@@ -28,7 +28,7 @@ export default function Navbar() {
   ];
 
   const bookingLink =
-    "https://calendly.com/moses-clovirahq/30min";
+    "https://cal.com/mosesmaina/msp-growth-strategy-call";
 
   const closeMenu = () => {
     setOpen(false);
@@ -47,7 +47,6 @@ export default function Navbar() {
         backdrop-blur-xl
       "
     >
-
       <nav
         className="
           mx-auto
@@ -60,7 +59,6 @@ export default function Navbar() {
           sm:px-6
         "
       >
-
         {/* Logo */}
 
         <a
@@ -77,7 +75,6 @@ export default function Navbar() {
         </a>
 
 
-
         {/* Desktop Navigation */}
 
         <div
@@ -88,9 +85,7 @@ export default function Navbar() {
             md:flex
           "
         >
-
           {links.map((link) => (
-
             <a
               key={link.name}
               href={link.href}
@@ -104,9 +99,7 @@ export default function Navbar() {
             >
               {link.name}
             </a>
-
           ))}
-
 
 
           <a
@@ -130,10 +123,7 @@ export default function Navbar() {
             Explore Partnership Fit
           </a>
 
-
         </div>
-
-
 
 
         {/* Mobile Menu Button */}
@@ -147,24 +137,19 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           aria-expanded={open}
         >
-
           {open ? (
             <X className="h-7 w-7" />
           ) : (
             <Menu className="h-7 w-7" />
           )}
-
         </button>
 
-
       </nav>
-
 
 
       {/* Mobile Menu */}
 
       {open && (
-
         <div
           className="
             border-t
@@ -176,7 +161,6 @@ export default function Navbar() {
             md:hidden
           "
         >
-
           <div
             className="
               flex
@@ -186,7 +170,6 @@ export default function Navbar() {
           >
 
             {links.map((link) => (
-
               <a
                 key={link.name}
                 href={link.href}
@@ -201,9 +184,7 @@ export default function Navbar() {
               >
                 {link.name}
               </a>
-
             ))}
-
 
 
             <a
@@ -227,11 +208,9 @@ export default function Navbar() {
               Explore Partnership Fit
             </a>
 
-
           </div>
 
         </div>
-
       )}
 
     </header>

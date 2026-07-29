@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 
 const bookingLink =
-  "https://calendly.com/moses-clovirahq/30min";
+  "https://cal.com/mosesmaina/msp-growth-strategy-call";
 
 export default function Hero() {
   return (
@@ -34,7 +34,7 @@ export default function Hero() {
             blur-[120px]
             sm:h-[500px]
             sm:w-[500px]
-            sm:blur-[140px]
+            sm.blur-[140px]
           "
         />
 
@@ -155,8 +155,6 @@ export default function Hero() {
           </div>
 
 
-
-          {/* Pilot Positioning */}
 
           <p
             className="
