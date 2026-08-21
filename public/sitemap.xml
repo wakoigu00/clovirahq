@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://clovirahq.com/</loc>
@@ -43,6 +42,42 @@
     <loc>https://clovirahq.com/about</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-most-msp-outbound-campaigns-fail-before-the-first-email</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/what-a-commercial-signal-actually-means-for-an-msp</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/the-difference-between-an-msp-lead-and-an-msp-opportunity</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/privacy</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/terms</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
 
 </urlset>

@@ -8,6 +8,7 @@ export default function Footer() {
     ["Services", "/services"],
     ["How It Works", "/how-it-works"],
     ["Results", "/results"],
+    ["Insights", "/insights"],
     ["Pilot Program", "/pilot"],
     ["About", "/about"],
   ];
@@ -26,7 +27,6 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-slate-950 py-14 sm:py-16">
       <Container>
         <div className="grid gap-10 sm:gap-12 md:grid-cols-4">
-
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold text-white">
@@ -93,14 +93,15 @@ export default function Footer() {
               className="mt-6 inline-flex items-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20"
             >
               Explore Partnership Fit
-              <span className="ml-2">→</span>
+              <span className="ml-2" aria-hidden="true">
+                →
+              </span>
             </a>
           </div>
         </div>
 
         {/* Bottom Footer */}
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-
           <p>
             © {new Date().getFullYear()} CloviraHQ. All rights reserved.
           </p>
@@ -120,7 +121,6 @@ export default function Footer() {
               Terms
             </Link>
           </div>
-
         </div>
       </Container>
     </footer>

@@ -14,6 +14,9 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
+import Insights from "./pages/Insights";
+import InsightArticle from "./pages/InsightArticle";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -30,6 +33,10 @@ export default function App() {
           <Route path="/results" element={<Results />} />
           <Route path="/pilot" element={<Pilot />} />
           <Route path="/about" element={<About />} />
+
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:slug" element={<InsightArticle />} />
+
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
         </Routes>

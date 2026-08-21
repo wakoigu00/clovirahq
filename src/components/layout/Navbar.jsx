@@ -24,6 +24,10 @@ export default function Navbar() {
       href: "/results",
     },
     {
+      name: "Insights",
+      href: "/insights",
+    },
+    {
       name: "About",
       href: "/about",
     },
