@@ -253,6 +253,269 @@ const articles = [
       },
     ],
   },
+
+  {
+    slug: "how-msps-can-use-commercial-signals-to-find-better-outbound-prospects",
+    title:
+      "How MSPs Can Use Commercial Signals to Find Better Outbound Prospects",
+    excerpt:
+      "Commercial signals can help MSPs move beyond generic ICP lists and identify companies where there is a defensible reason to start a conversation.",
+    category: "MSP Outbound",
+    date: "August 21, 2026",
+    readTime: "8 min read",
+    author: "Moses Maina",
+    featured: false,
+
+    content: [
+      {
+        type: "paragraph",
+        text:
+          "Most MSP prospecting begins with a database. You choose a geography, company size, industry, and decision-maker, then build a list of companies that match those criteria.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "That creates an ICP list. It does not necessarily create an outbound opportunity list.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The difference is commercial timing. A company can be a perfect fit for an MSP and still have no compelling reason to respond to an unsolicited message today.",
+      },
+      {
+        type: "heading",
+        text: "What is a commercial signal?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A commercial signal is an observable business event or change that can help explain why a company may be entering a different operating environment.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The important word is observable. A commercial signal should be supported by evidence rather than created from an assumption about what a prospect must be experiencing.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "For MSP outbound, useful examples can include acquisitions, new locations, office expansion, significant hiring, funding, new partnerships, service launches, market expansion, or other meaningful organizational changes.",
+      },
+      {
+        type: "heading",
+        text: "Why commercial signals matter for MSPs",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Managed service providers sell capabilities that become relevant within a company's operating environment. Changes in that environment can therefore provide a more credible starting point for an outbound conversation.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Consider a company that announces a new office location. The announcement itself does not prove that the company needs a new MSP.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "What it does establish is that something changed: the organization is expanding its physical footprint.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "That change may create a different technology environment involving additional users, devices, connectivity, security requirements, access management, or coordination across locations.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The researcher's job is not to claim that all of those problems exist. The job is to determine whether the verified change creates a reasonable environment in which the MSP's capabilities could be relevant.",
+      },
+      {
+        type: "heading",
+        text: "Signal versus speculation",
+      },
+      {
+        type: "paragraph",
+        text:
+          "This distinction is one of the most important parts of research-driven outbound.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Suppose a company announces that it acquired another business. It is reasonable to state that an acquisition occurred.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "It is not automatically reasonable to tell the prospect that their IT infrastructure is fragmented, their cybersecurity is inadequate, or their internal team is overwhelmed.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Those may be possibilities, but they are not established facts.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Strong outbound research keeps the evidence and the interpretation separate. The evidence tells you what changed. The interpretation explains why that change could create relevance for the MSP.",
+      },
+      {
+        type: "heading",
+        text: "Not every signal deserves outreach",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Finding a commercial event is only the first qualification step.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A useful prospecting system should ask several additional questions: Is the event recent enough to matter? Is the evidence reliable? Does the change affect the company's operating environment? Can the MSP's capabilities reasonably connect to that environment? Is there a relevant decision-maker to approach?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If those questions cannot be answered, the prospect may still belong in the database, but it should not necessarily receive high-priority personalized outreach.",
+      },
+      {
+        type: "heading",
+        text: "A practical commercial-signal workflow",
+      },
+      {
+        type: "paragraph",
+        text:
+          "MSPs can structure their research into a simple sequence.",
+      },
+      {
+        type: "heading",
+        text: "1. Start with ICP fit",
+      },
+      {
+        type: "paragraph",
+        text:
+          "First establish the basic fit: geography, company profile, employee range, industry, and the type of organization the MSP is equipped to serve.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "This prevents the research process from spending time on companies that were never appropriate targets.",
+      },
+      {
+        type: "heading",
+        text: "2. Find an objective change",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Next, search for a recent commercial event that can be independently verified.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The goal at this stage is simply to answer: What objectively changed?",
+      },
+      {
+        type: "heading",
+        text: "3. Establish the operational connection",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Once the event is established, determine how the change could affect the environment the MSP supports.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "This is where generic personalization becomes commercial relevance.",
+      },
+      {
+        type: "heading",
+        text: "4. Remove unsupported assumptions",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Before using the research in an email, remove claims that cannot be supported.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Instead of saying, 'Your acquisition has probably created IT integration problems,' a stronger message can acknowledge the acquisition and ask whether the MSP is already involved in supporting the resulting environment.",
+      },
+      {
+        type: "heading",
+        text: "5. Prioritize the strongest opportunities",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Not every qualified company deserves the same level of research effort.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Prioritize prospects where the commercial event is clear, recent, relevant to the MSP's capabilities, and supported by strong evidence.",
+      },
+      {
+        type: "heading",
+        text: "Why this approach improves outbound quality",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The biggest advantage of commercial-signal research is not simply better personalization. It changes the reason behind the outreach.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Instead of starting with, 'This company looks like a good prospect, so what can I say?', the researcher starts with, 'Something objectively changed here. Does that change create a defensible reason for this MSP to become relevant?'",
+      },
+      {
+        type: "paragraph",
+        text:
+          "That is a much stronger foundation for an outbound message.",
+      },
+      {
+        type: "heading",
+        text: "The goal is not more prospects. It is better reasons to contact them.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Large databases create the illusion of pipeline. But a database only tells you who exists. It does not tell you who has a timely reason to have a conversation.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Commercial signals help bridge that gap.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "For MSPs, the objective should not be to send more messages simply because more contacts are available. The objective should be to identify companies where verified change, operational relevance, and MSP capability intersect.",
+      },
+      {
+        type: "heading",
+        text: "The takeaway",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The best outbound prospects are not always the companies with the biggest growth numbers or the largest databases attached to them.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "They are the companies where you can establish a credible chain from what changed, to what that change may affect, to why the MSP could reasonably be relevant.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "That is the difference between personalization for its own sake and research that creates a legitimate reason to start a sales conversation.",
+      },
+    ],
+  },
 ];
 
 export default articles;
