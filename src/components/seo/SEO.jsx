@@ -10,6 +10,9 @@ const DEFAULT_DESCRIPTION =
 
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
+const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+
 function setMetaTag(attribute, value, content) {
   if (!content) {
     return;
@@ -67,14 +70,68 @@ function setJsonLd(data) {
   element.textContent = JSON.stringify(data);
 }
 
-function removeJsonLd() {
-  const element = document.head.querySelector(
-    'script[data-seo="structured-data"]'
-  );
+function buildDefaultStructuredData({
+  title,
+  description,
+  canonicalUrl,
+  imageUrl,
+  type,
+}) {
+  const pageId = `${canonicalUrl}#webpage`;
 
-  if (element) {
-    element.remove();
-  }
+  const organization = {
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: "CloviraHQ",
+    url: SITE_URL,
+    description:
+      "CloviraHQ helps Managed Service Providers build predictable outbound systems through research-driven targeting, personalized outreach, and continuous optimization.",
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/og-image.png`,
+    },
+  };
+
+  const website = {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    url: SITE_URL,
+    name: "CloviraHQ",
+    description: DEFAULT_DESCRIPTION,
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+  };
+
+  const webpage = {
+    "@type": type === "article" ? "Article" : "WebPage",
+    "@id": pageId,
+    url: canonicalUrl,
+    name: title,
+    description,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    about: {
+      "@id": ORGANIZATION_ID,
+    },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: imageUrl,
+    },
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      organization,
+      website,
+      webpage,
+    ],
+  };
 }
 
 export default function SEO({
@@ -91,7 +148,8 @@ export default function SEO({
 }) {
   useEffect(() => {
     const canonicalUrl =
-      canonical || `${SITE_URL}${window.location.pathname}`;
+      canonical ||
+      `${SITE_URL}${window.location.pathname}`;
 
     const imageUrl = image.startsWith("http")
       ? image
@@ -99,43 +157,83 @@ export default function SEO({
 
     document.title = title;
 
-    /*
-     * Basic SEO
-     */
-    setMetaTag("name", "description", description);
-    setMetaTag("name", "robots", "index, follow");
+    setMetaTag(
+      "name",
+      "description",
+      description
+    );
 
-    /*
-     * Open Graph
-     */
-    setMetaTag("property", "og:type", type);
-    setMetaTag("property", "og:site_name", "CloviraHQ");
-    setMetaTag("property", "og:title", title);
-    setMetaTag("property", "og:description", description);
-    setMetaTag("property", "og:url", canonicalUrl);
-    setMetaTag("property", "og:image", imageUrl);
+    setMetaTag(
+      "name",
+      "robots",
+      "index, follow"
+    );
 
-    /*
-     * Twitter
-     */
+    setMetaTag(
+      "property",
+      "og:type",
+      type
+    );
+
+    setMetaTag(
+      "property",
+      "og:site_name",
+      "CloviraHQ"
+    );
+
+    setMetaTag(
+      "property",
+      "og:title",
+      title
+    );
+
+    setMetaTag(
+      "property",
+      "og:description",
+      description
+    );
+
+    setMetaTag(
+      "property",
+      "og:url",
+      canonicalUrl
+    );
+
+    setMetaTag(
+      "property",
+      "og:image",
+      imageUrl
+    );
+
     setMetaTag(
       "name",
       "twitter:card",
       "summary_large_image"
     );
 
-    setMetaTag("name", "twitter:title", title);
-    setMetaTag("name", "twitter:description", description);
-    setMetaTag("name", "twitter:image", imageUrl);
+    setMetaTag(
+      "name",
+      "twitter:title",
+      title
+    );
 
-    /*
-     * Canonical URL
-     */
-    setLinkTag("canonical", canonicalUrl);
+    setMetaTag(
+      "name",
+      "twitter:description",
+      description
+    );
 
-    /*
-     * Article-specific metadata
-     */
+    setMetaTag(
+      "name",
+      "twitter:image",
+      imageUrl
+    );
+
+    setLinkTag(
+      "canonical",
+      canonicalUrl
+    );
+
     if (type === "article") {
       if (publishedTime) {
         setMetaTag(
@@ -210,13 +308,21 @@ export default function SEO({
       );
     }
 
-    /*
-     * Structured data
-     */
+    const defaultStructuredData =
+      buildDefaultStructuredData({
+        title,
+        description,
+        canonicalUrl,
+        imageUrl,
+        type,
+      });
+
     if (structuredData) {
       setJsonLd(structuredData);
     } else {
-      removeJsonLd();
+      setJsonLd(
+        defaultStructuredData
+      );
     }
   }, [
     title,
