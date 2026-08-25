@@ -17,32 +17,179 @@ import Terms from "./pages/Terms";
 import Insights from "./pages/Insights";
 import InsightArticle from "./pages/InsightArticle";
 
+import AdminLogin from "./admin/pages/AdminLogin";
+import AdminDashboard from "./admin/pages/AdminDashboard";
+import AdminArticles from "./admin/pages/AdminArticles";
+import AdminArticleEditor from "./admin/pages/AdminArticleEditor";
+
+function PublicLayout({ children }) {
+  return (
+    <>
+      <Navbar />
+
+      <main>{children}</main>
+
+      <Footer />
+    </>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
 
-      <Navbar />
+      <Routes>
+        {/* =========================================
+            ADMIN ROUTES
+        ========================================= */}
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/msp-outbound" element={<MspOutbound />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/results" element={<Results />} />
-          <Route path="/pilot" element={<Pilot />} />
-          <Route path="/about" element={<About />} />
+        <Route
+          path="/admin/login"
+          element={<AdminLogin />}
+        />
 
-          <Route path="/insights" element={<Insights />} />
-          <Route path="/insights/:slug" element={<InsightArticle />} />
+        <Route
+          path="/admin"
+          element={<AdminDashboard />}
+        />
 
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
-        </Routes>
-      </main>
+        <Route
+          path="/admin/dashboard"
+          element={<AdminDashboard />}
+        />
 
-      <Footer />
+        <Route
+          path="/admin/articles"
+          element={<AdminArticles />}
+        />
+
+        <Route
+          path="/admin/articles/new"
+          element={<AdminArticleEditor />}
+        />
+
+        <Route
+          path="/admin/articles/:id/edit"
+          element={<AdminArticleEditor />}
+        />
+
+        {/* =========================================
+            PUBLIC WEBSITE
+        ========================================= */}
+
+        <Route
+          path="/"
+          element={
+            <PublicLayout>
+              <Home />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/msp-outbound"
+          element={
+            <PublicLayout>
+              <MspOutbound />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/services"
+          element={
+            <PublicLayout>
+              <Services />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/how-it-works"
+          element={
+            <PublicLayout>
+              <HowItWorks />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/results"
+          element={
+            <PublicLayout>
+              <Results />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/pilot"
+          element={
+            <PublicLayout>
+              <Pilot />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/about"
+          element={
+            <PublicLayout>
+              <About />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/insights"
+          element={
+            <PublicLayout>
+              <Insights />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/insights/:slug"
+          element={
+            <PublicLayout>
+              <InsightArticle />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/privacy"
+          element={
+            <PublicLayout>
+              <Privacy />
+            </PublicLayout>
+          }
+        />
+
+        <Route
+          path="/terms"
+          element={
+            <PublicLayout>
+              <Terms />
+            </PublicLayout>
+          }
+        />
+
+        {/* =========================================
+            FALLBACK
+        ========================================= */}
+
+        <Route
+          path="*"
+          element={
+            <PublicLayout>
+              <Home />
+            </PublicLayout>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

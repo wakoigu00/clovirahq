@@ -70,9 +70,160 @@ h4 {
   letter-spacing: -0.03em;
 }
 
-
 p {
   color: var(--body);
+}
+
+
+/* =========================
+   Article Typography
+========================= */
+
+.prose-clovira {
+  color: #b5c0d0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.prose-clovira p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #b5c0d0;
+}
+
+.prose-clovira h2 {
+  margin-top: 3.25rem;
+  margin-bottom: 1rem;
+
+  color: #ffffff;
+
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.prose-clovira h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+
+  color: #ffffff;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.prose-clovira strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.prose-clovira em {
+  color: #dbe4f0;
+}
+
+.prose-clovira a {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-clovira a:hover {
+  color: #93c5fd;
+}
+
+.prose-clovira ul,
+.prose-clovira ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+  padding-left: 1.5rem;
+}
+
+.prose-clovira ul {
+  list-style-type: disc;
+}
+
+.prose-clovira ol {
+  list-style-type: decimal;
+}
+
+.prose-clovira li {
+  margin-bottom: 0.65rem;
+  padding-left: 0.25rem;
+  color: #b5c0d0;
+}
+
+.prose-clovira blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+
+  border-left: 3px solid rgba(79, 140, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #dbe4f0;
+}
+
+.prose-clovira hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prose-clovira code {
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0.15rem 0.35rem;
+
+  color: #dbeafe;
+  font-size: 0.9em;
+}
+
+.prose-clovira pre {
+  margin: 2rem 0;
+  overflow-x: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+
+  background: #020617;
+  padding: 1.25rem;
+
+  color: #dbeafe;
+}
+
+.prose-clovira img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 2.5rem 0;
+
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================
+   Responsive Article Typography
+========================= */
+
+@media (max-width: 640px) {
+  .prose-clovira {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .prose-clovira h2 {
+    margin-top: 2.75rem;
+    font-size: 1.5rem;
+  }
+
+  .prose-clovira h3 {
+    margin-top: 2.25rem;
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -94,14 +245,12 @@ p {
   width: 10px;
 }
 
-
 ::-webkit-scrollbar-track {
   background: #050816;
 }
 
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
 }
 
@@ -111,11 +260,10 @@ p {
 ========================= */
 
 .glass {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   border: 1px solid var(--border);
 }
-
 
 .gradient-text {
   background:
@@ -130,7 +278,6 @@ p {
 
   color: transparent;
 }
-
 
 .section-space {
   padding-top: 120px;
