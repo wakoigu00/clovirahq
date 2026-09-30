@@ -50,20 +50,76 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- Published Insights -->
+
   <url>
-    <loc>https://clovirahq.com/insights/why-most-msp-outbound-campaigns-fail-before-the-first-email</loc>
+    <loc>https://clovirahq.com/insights/why-most-msps-are-prospecting-at-the-wrong-time</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://clovirahq.com/insights/what-a-commercial-signal-actually-means-for-an-msp</loc>
+    <loc>https://clovirahq.com/insights/the-commercial-signal-advantage-how-msps-can-identify-prospects-before-they-start-looking</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://clovirahq.com/insights/the-difference-between-an-msp-lead-and-an-msp-opportunity</loc>
+    <loc>https://clovirahq.com/insights/the-end-of-generic-msp-outbound-commercial-timing</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/the-end-of-generic-outbound</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-msps-should-stop-treating-growth-signals-as-buying-intent</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/compatibility-before-personalization-msp</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-msp-outbound-fails-even-when-the-targeting-looks-right</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/compatibility-before-personalization</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-commercial-evidence-matters-in-msp-prospecting</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-commercial-signals-matter-more-than-generic-growth</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/commercial-signals-arent-commercial-evidence</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://clovirahq.com/insights/why-growth-signals-arent-enough-for-msp-prospecting</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
